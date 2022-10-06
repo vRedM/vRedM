@@ -43,9 +43,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `identifier`, `name`, `surname`, `position`, `money`, `skin`) VALUES
-(7, 'license:35b03375fe73697de5ffc257841385863e39d087', 'salut', 'lesmecs', NULL, NULL, NULL);
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
