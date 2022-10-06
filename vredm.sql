@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 06 oct. 2022 à 19:08
+-- Généré le : jeu. 06 oct. 2022 à 20:43
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -30,14 +30,21 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `firstname` varchar(55) DEFAULT NULL,
-  `secondname` varchar(55) DEFAULT NULL,
+  `identifier` varchar(255) DEFAULT NULL,
+  `name` varchar(55) DEFAULT NULL,
+  `surname` varchar(55) DEFAULT NULL,
   `position` longtext,
   `money` varchar(255) DEFAULT NULL,
-  `license` varchar(255) DEFAULT NULL,
-  `skin` longtext NOT NULL,
+  `skin` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`id`, `identifier`, `name`, `surname`, `position`, `money`, `skin`) VALUES
+(7, 'license:35b03375fe73697de5ffc257841385863e39d087', 'salut', 'lesmecs', NULL, NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
