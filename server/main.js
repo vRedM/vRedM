@@ -33,13 +33,14 @@ onNet("db:creer", () =>
 onNet("db:isnew", () =>
 {
     const identifiers = GetPlayerIdentifier(source, 0);
-    const sql = "SELECT * FROM `users` WHERE `identifier`='+identifiers+'";
+    const sql = "SELECT * FROM `users` WHERE `identifier`='"+identifiers+"'";
     oxmysql.query(sql, (result) => {
-        if(result) {
-            console.log("tg");
+        if(result.length > 0) {
+            console.log(result);
+            console.log("Player already registered");
         } else {
-            console.log('tg');
-            registerplayer();
+            console.log('Player not registered');
+            return;
         }
     });
 });

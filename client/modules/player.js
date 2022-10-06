@@ -9,8 +9,8 @@ RegisterCommand("register", (source, args) => {
 });
 
 
-RegisterCommand("creer", (source, args) => {
-    emitNet("js:debug", "Hello from the client!");
+RegisterCommand("create", (source, args) => {
+    emitNet("js:debug", "Thanks for creating your character, we will be the best RedM Framework, trust me!❤ ");
     emitNet("db:creer");
     return;
     
