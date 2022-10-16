@@ -40,6 +40,7 @@ onNet("db:isnew", () =>
             console.log("Player already registered");
         } else {
             console.log('Player not registered');
+            
             return;
         }
     });
