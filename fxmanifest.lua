@@ -8,7 +8,8 @@ description 'The vRedM Framework'
 version '1.0.0'
 
 client_scripts {
-    'client/modules/player.js'
+    'client/modules/player.js',
+    'client/modules/test.lua'
 
 }
 server_scripts {
@@ -16,3 +17,10 @@ server_scripts {
 } 
 
 server_script '@oxmysql/lib/MySQL.lua'
+
+ui_page 'html/index.html'
+
+files {
+    'html/index.html',
+    'html/script.js'
+}

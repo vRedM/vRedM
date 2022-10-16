@@ -3,9 +3,7 @@ setTick(async () => {
     emitNet("js:chat", "Hello from the client!");
 });
 
-setTick(async () => {
-    text();
-});
+
 
 function text(){
     SetTextFont(0)
